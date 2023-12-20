@@ -79,7 +79,7 @@ void main () {
 	}
 
 	long res = 1;
-	foreach (name; ["ls", "nb", "vc", "vg"])
+	foreach (name; src[src["rx"].front])
 		res *= go (name);
 	writeln (res);
 }
